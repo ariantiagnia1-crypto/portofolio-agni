@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Data Analyst | Agnia Arianti </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#ff4569;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ff1744;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8%;
+background:
+linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero-text{
+max-width:600px;
+}
+
+
+.hero-text span{
+color:#ef4444;
+}
+
+.hero-text h1{
+font-size: 64px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #fff, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text h3{
+font-size:28px;
+color:#ef4444;
+margin-bottom:15px;
+}
+
+.hero-text p{
+line-height:1.8;
+color:#cbd5e1;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ff1744;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+}
+
+.hero-image img{
+width:420px;
+height:420px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid #ef4444;
+box-shadow:
+0 0 30px #ef4444,
+0 0 60px rgba(56,189,248,.4);
+}
+
+/* SECTION */
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+color:#ef4444;
+margin-bottom:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+/* ABOUT */
+
+.about p{
+line-height:2;
+font-size:17px;
+}
+
+/* EDUCATION */
+
+.timeline{
+border-left:4px solid #ef4444;
+padding-left:25px;
+max-width:800px;
+margin:auto;
+}
+
+.timeline-item{
+margin-bottom:30px;
+}
+
+.timeline-item h3{
+color:#ef4444;
+}
+
+/* EXPERIENCE */
+
+.exp ul{
+padding-left:20px;
+}
+
+.exp li{
+margin-bottom:12px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+font-weight:600;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+background:#ff4569;
+}
+
+/* PROJECT */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #ff4569;
+}
+
+/* CONTACT */
+
+.contact{
+max-width:700px;
+margin:auto;
+text-align:center;
+}
+ 
+.contact p{
+margin-bottom:15px;
+font-size:18px;
+color:#ef4444;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:30px;
+color:#94a3b8;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+gap:40px;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.hero-image img{
+width:260px;
+height:260px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#project">Project</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h4>hallo, I'm</h4>
+<h1>Agnia<span>Arianti</span><br></h1>
+<h3> Data Analyst </h3>
+<h5>Mahasiswa Sistem Informasi</h5>
+
+
+<p>
+Mahasiswa Sistem Informasi yang memiliki minat dalam bidang teknologi, pengolahan data, dan pengembangan sistem informasi.
+Memiliki semangat belajar tinggi dan mampu bekerja sama dalam tim.
+</p>
+
+<a href="#about" class="btn">Explore Portfolio</a>
+
+</div>
+
+<div class="hero-image">
+  <a href="https://drive.google.com/file/d/1sxRCH1zhTnwPFN8202O1oNc0flPj3TiJ/view?usp=drivesdk">
+    <img src="foto.png" alt="gambar">
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">Tentang Saya</h2>
+
+<div class="project">
+
+<p>
+Saya adalah seorang mahasiswa yang memadukan kreativitas visual dengan ketelitian dalam manajemen operasional. Berbekal latar belakang pendidikan di bidang Multimedia serta pengalaman langsung dalam Administrasi Umum, mencatat data-data perusahaan dengan baik dan menyusun dengan rapih.
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Pendidikan</h2>
+
+<div class="timeline">
+  
+<div class="skill">
+<h3>SMK Al-Ma'arif | Multimedia</h3>
+<p>(2022-2025)</p>
+<p>
+Kompetensi: Desain Grafis, Editing Foto & Video, Microsoft Office, Pengelolaan Data, dan Dasar Pembuatan Website. 
+</p>
+</div>
+<br>
+<div class="skill">
+  <h3>Universitas Pamulang</h3>
+  <p>(2025-selesai)</p>
+  <p>
+  Kompetensi: Pengembangan aplikasi, Membuat struktur database, Membuat web.
+  </p>
+</div>
+
+
+</div>
+</section>
+
+<section id="experience">
+
+<h2 class="title">Pengalaman PKL</h2>
+
+<div class="project">
+
+<h3>PT.Dein Indonesia</h3>
+
+<br>
+
+<ul>
+<li>Mencatat keluar dan masuk barang.</li>
+<li>Menginput absensi karyawan.</li>
+<li>Membantu pengarsipan dokumen dan penyusunan berkas.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Personal Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Microsoft Excel</div>
+
+<div class="skill">Adobe Photoshop</div>
+
+<div class="skill">Adobe Premiere Pro</div>
+
+<div class="skill">Corel Draw</div>
+
+<div class="skill">Data Entry</div>
+
+
+</div>
+
+</section>
+
+<section id="project">
+
+<h2 class="title">Project & Organization</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Fotografi & Videografi</h3>
+<p>Dokumentasi kegiatan sekolah dan publikasi acara.</p>
+</div>
+
+<div class="project">
+<h3>OSIS</h3>
+<p>Membuat acara PHBI, CLASSMEET, dan PRAMUKA .</p>
+</div>
+
+<div class="project">
+<h3>POSTER</h3>
+<p>Membuat poster film untuk kelengkapan film project.</p>
+</div>
+
+
+<div class="project">
+<h3>FILM</h3>
+<p>Membuat karya film untuk syarat lulus sekolah .</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+  <h2 class="title">Kontak</h2>
+
+<div class="contact">
+  
+   <div class="skill">Email:
+   <a href=mailto: "ariantiagnia1@gmail.com">ariantiagnia1@gmail.com</a>
+   </div>
+   <br>
+    <div class="skill">Instagram:
+        <a href="https://instagram.com/aainnaya_">
+          aainnaya</a>
+</div>
+<br>
+  <div Class="skill">WhatsApp:
+  <a href="https://wa.me/6283819411630" target="_blank">
+    Chat WhatsApp
+  </a>
+  </div>
+  
+    </a>
+</div>
+
+</section>
+
+
+<footer>
+© 2026 Agnia Arianti | Portfolio Website
+</footer>
+
+</body>
+</html>
